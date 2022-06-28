@@ -9,7 +9,12 @@ Html 5 | Css 3 | Sass | Bootstrap 5 | Javascript | React | React-router | Npm
 **que herramientas se usaron**
 - se uso un servidor local (wamp server), ira el archivo principal de la app para que se ejecute con react y hacer conexion con la bd de forma local.
 - el repositorio(carpeta de la app) se puede usar normal en otra carpeta, si solo quiere ejecutar la app react y ver la interfaz.
-- 
+
+**repositorio enlace**
+https://github.com/kevinv217/prueba_syc_kevinmedina.git
+git@github.com:kevinv217/prueba_syc_kevinmedina.git
+
+al clonar el repositorio deben instalar los paquetes por defecto que tiene el archivo package.json - usar npm install
 
 **Estructuracion y organizacion de componentes, carpetas y archivos**
 Dentro de la carpeta src: 
