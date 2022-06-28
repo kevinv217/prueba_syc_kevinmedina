@@ -11,8 +11,9 @@ export default function NavSuperior() {
           <div className="col-md-2 col-sm-2 p-0 ps-4">
             <a className="navbar-brand" href="/">
               <img
-                src="https://res.cloudinary.com/dtguzyae4/image/upload/v1645969296/templateHomeOffice/logo-5_enrte2.png"
+                src="https://res.cloudinary.com/dtguzyae4/image/upload/v1656382824/logo_pestana_wbzh8k.png"
                 alt=""
+                style={{ width: "30%" }}
               />
             </a>
             <button
