@@ -1,0 +1,205 @@
+@import "../../utility/colors";
+@import "../../utility/variables";
+
+.navsuperior {
+  position: fixed !important;
+  z-index: 1000 !important;
+  background-color: $colorfondoprimary !important;
+  width: 100%;
+  @include extra-min-phone {
+    justify-content: center !important;
+  }
+  @include super-min-phone {
+    justify-content: center !important;
+  }
+
+  .row {
+    div:first-child {
+      @include desktop {
+        padding-left: 10px !important;
+        // width: 20% ;
+      }
+      @include tablet {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        // width: auto;
+      }
+      @include phone {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+      }
+      @include extra-min-phone {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+      }
+      @include super-min-phone {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 0 !important;
+      }
+
+      a {
+        img {
+          width: auto;
+          @include super-min-phone {
+            width: 100% !important;
+          }
+        }
+      }
+
+      button {
+        @include tablet {
+          border: 1px solid $bordercolorprimary;
+        }
+        @include phone {
+          border: 1px solid $bordercolorprimary;
+        }
+        @include extra-min-phone {
+          border: 1px solid $bordercolorprimary;
+        }
+        @include super-min-phone {
+          border: 1px solid $bordercolorprimary;
+        }
+
+        i {
+          @include tablet {
+            color: $textcolorquaternary;
+          }
+          @include phone {
+            color: $textcolorquaternary;
+          }
+          @include extra-min-phone {
+            color: $textcolorquaternary;
+          }
+          @include super-min-phone {
+            color: $textcolorquaternary;
+          }
+        }
+      }
+    }
+
+    div:last-child {
+      @include desktop {
+        justify-content: flex-end;
+      }
+      @include tablet {
+        padding: 10px 0 0 0;
+      }
+      @include extra-min-phone {
+        padding: 10px 0 !important;
+      }
+      @include super-min-phone {
+        padding: 10px 0 !important;
+      }
+
+      .row {
+        @include extra-min-phone {
+          padding: 0 !important;
+        }
+        @include super-min-phone {
+          padding: 0 !important;
+        }
+
+        ul {
+          list-style: none;
+          @include desktop {
+            justify-content: flex-end;
+          }
+          @include tablet {
+            flex-direction: row;
+          }
+
+          li {
+            @include phone {
+              padding: 10px 0;
+            }
+            @include extra-min-phone {
+              padding: 5px 0;
+            }
+            @include super-min-phone {
+              padding: 5px 0;
+            }
+
+            a {
+              text-decoration: none;
+              color: $textcolorquaternary;
+            }
+          }
+
+          li:hover {
+            a {
+              padding: 0 0 23px 0;
+              color: $textcolorsecundary;
+              border-bottom: 3px solid $bordercolorprimary;
+              @include desktop {
+                padding: 0 0 18px 0;
+              }
+              @include tablet {
+                padding: 0 0 17px 0;
+              }
+              @include phone {
+                padding: 10px 0;
+              }
+              @include extra-min-phone {
+                padding: 10px 0;
+              }
+              @include super-min-phone {
+                padding: 10px 0;
+              }
+            }
+          }
+        }
+
+        div {
+          @include phone {
+            justify-content: center !important;
+            width: 100%;
+            padding: 10px 0 !important;
+          }
+          @include super-min-phone {
+            flex-direction: column;
+            justify-content: center !important;
+          }
+
+          a {
+            text-decoration: none;
+            color: $textcolorquaternary;
+            @include extra-min-phone {
+              margin: 0 5px !important;
+            }
+            @include super-min-phone {
+              margin: 0 !important;
+              padding: 5px 0;
+            }
+          }
+
+          a:last-child {
+            button {
+              @include extra-min-phone {
+                padding: 5px;
+                font-size: 12px;
+              }
+
+              i {
+                color: $textcolorquaternary;
+              }
+            }
+          }
+
+          button {
+            i {
+              color: $iconcolortertiary;
+            }
+          }
+        }
+      }
+    }
+  }
+}
